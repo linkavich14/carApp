@@ -1,0 +1,48 @@
+
+<form (ngSubmit)="onMiniSearch(f)" #f="ngForm">
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">        
+        <select class="selectpicker" id="brandPicker" name="brandPicker" data-live-search="true" ngModel multiple title="Brand">
+            <option data-tokens="Peugeot">Peugeot</option>
+            <option data-tokens="Toyota">Toyota</option>
+            <option data-tokens="Nissan">Nissan</option>
+        </select>
+        <select class="selectpicker" id="modelPicker" name="modelPicker" data-live-search="true" ngModel multiple title="Model">
+                <option data-tokens="206">206</option>
+                <option data-tokens="306">306</option>
+                <option data-tokens="208">208</option>
+        </select>
+        <select class="selectpicker" id="locationPicker" name="locationPicker" data-live-search="true" ngModel multiple title="Location">
+            <optgroup label="Victoria">
+                <option>Melbourne</option>
+                <option>Ballarat</option>
+                <option>Geelong</option>
+              </optgroup>
+              <optgroup label="NSW">
+                <option>Sydney</option>
+                <option>Capmbelltown</option>
+                <option>Penrith</option>
+              </optgroup>                        
+        </select>
+    </div>
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-around">        
+        <select class="selectpicker" id="minPricePicker" name="minPricePicker" ngModel title="Min Price">
+                <option>100</option>
+                <option>200</option>
+                <option>300</option>
+        </select>        
+        <select class="selectpicker" id="maxPricePicker" name="maxPricePicker" ngModel title="Max Price">
+            <option>1000</option>
+            <option>2000</option>
+            <option>3000</option>
+        </select>                          
+    </div>
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-around">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>        
+</form>
+
+  
+
+
+
+
