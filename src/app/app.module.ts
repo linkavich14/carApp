@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { RefineSearchComponent } from './search/refine-search/refine-search.component';
 import { DataCommunicationService } from './shared/data-com.service';
+import { VehicleService } from './vehicles/vehicle.service';
 
 
 
@@ -45,7 +46,7 @@ import { DataCommunicationService } from './shared/data-com.service';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [DataCommunicationService],
+  providers: [DataCommunicationService, VehicleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
